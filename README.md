@@ -26,7 +26,12 @@
   python pdbbind_data.py
 ```
 
-4. Docking reuslts are in "data/docking/" directory. If you prepared your own docking results, replace them into "data/docking/" directory, and split the result into multiple single pdbqt file for each structure in its pdb-name-directory(ex. "docking/8gpb/8gpb_0.pdbqt", "docking/8gpb/8gpb_1.pdbqt", ...). If you use "split_output.py" in "data/docking/" directory, it will make "docking_dict.pickle" file(docking results which passed filtering). Move the file to main directory for dataset2 and dataset4.
+4. Docking reuslts are compressed and splited in "data/" directory. You should join files to one tar.gz file and extract it.
+```
+  cat docking.parta* > docking.tar.gz
+  tar -xzvf docking.tar.gz
+```
+If you prepared your own docking results, replace them into "data/docking/" directory, and split the result into multiple single pdbqt file for each structure in its pdb-name-directory(ex. "docking/8gpb/8gpb_0.pdbqt", "docking/8gpb/8gpb_1.pdbqt", ...). If you use "split_output.py" in "data/docking/" directory, it will make "docking_dict.pickle" file(docking results which passed filtering). Move the file to main directory for dataset2 and dataset4.
 
 5. Build dataset using "split_dataset1.py", "split_dataset2.py", "split_dataset3.py", and "split_dataset4.py". This process will generate datasets from PDBbind general-set and refined-set. The 'NUMBER_OF_VALIDATION_SET' should be aranged based on PDBbind data without docking data augmentation.
 ```
