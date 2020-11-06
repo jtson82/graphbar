@@ -1,0 +1,3 @@
+model_checkpoint_path: "set2-2-core-best"
+all_model_checkpoint_paths: "set2-2-core"
+all_model_checkpoint_paths: "set2-2-core-best"

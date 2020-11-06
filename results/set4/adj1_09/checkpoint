@@ -1,0 +1,3 @@
+model_checkpoint_path: "set4-1-core-best"
+all_model_checkpoint_paths: "set4-1-core"
+all_model_checkpoint_paths: "set4-1-core-best"

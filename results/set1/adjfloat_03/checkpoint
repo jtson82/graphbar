@@ -1,0 +1,3 @@
+model_checkpoint_path: "set1-float-core-best"
+all_model_checkpoint_paths: "set1-float-core"
+all_model_checkpoint_paths: "set1-float-core-best"
