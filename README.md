@@ -26,7 +26,7 @@
   python pdbbind_data.py
 ```
 
-4. Docking reuslts are compressed and splited in "data/" directory. You should join files to one tar.gz file and extract it.
+4. Docking results are compressed and splited in "data/" directory. You should join files to one tar.gz file and extract it.
 ```
   cat docking.parta* > docking.tar.gz
   tar -xzvf docking.tar.gz
